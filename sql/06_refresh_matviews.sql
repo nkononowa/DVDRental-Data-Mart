@@ -1,0 +1,7 @@
+BEGIN;
+
+REFRESH MATERIALIZED VIEW CONCURRENTLY dm.mv_payments_by_day_film;
+
+REFRESH MATERIALIZED VIEW CONCURRENTLY dm.mv_rentals_summary;
+
+COMMIT;
